@@ -7,29 +7,42 @@
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="body">
     <header class="header">
-      <img
-        class="header__logo"
-        src="images/logo.svg"
-        alt="Изображение логотипа"
-        width="78"
-        height="15"
-      />
-      <ul class="header__menu">
-        <li class="header__menu-list">
-          <a href="0" class="header__menu-item" style="text-decoration: none"
-            >Главная</a
-          >
-        </li>
-        <li class="header__menu-list">
-          <a href="0" class="header__menu-item">О нас</a>
-        </li>
-        <li class="header__menu-list">
-          <a href="0" class="header__menu-item">Контакты</a>
-        </li>
-      </ul>
+      <a class="header__logo-link">
+        <img
+          class="header__logo"
+          src="images/logo.svg"
+          alt="Изображение логотипа"
+          width="78"
+          height="15"
+      /></a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-list">
+            <a href="0" class="header__menu-item">Главная</a>
+          </li>
+          <li class="header__menu-list">
+            <a href="0" class="header__menu-item-active">О нас</a>
+          </li>
+          <li class="header__menu-list">
+            <a href="0" class="header__menu-item-active">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
@@ -41,20 +54,16 @@
             alt="Фоновое изображение в виде геометрических фигур"
           />
           <div class="cover">
-            <span class="span" style="text-align: start; margin-left: 20px"
-              >С</span
-            >
-            <span class="span" style="text-align: center">чистого</span>
-            <span class="span" style="text-align: end; margin-right: 24px"
-              >листа</span
-            >
+            <span class="span span_start">С</span>
+            <span class="span span_center">чистого</span>
+            <span class="span span_end">листа</span>
           </div>
         </div>
 
         <div class="intro">
           <div class="data_line">
             <p class="align_left">8 способов борьбы со страхом чистого листа</p>
-            <time class="align_right" datetime="2022-06-05">05.06.2022г.</time>
+            <time class="align_right" datetime="2022-06-05">05.06.2022 г.</time>
           </div>
           <p class="mid_line">
             Начинать что-то новое — тяжело и страшно. Даже если это просто
@@ -79,13 +88,13 @@
             <h1 class="question-part-1">Почему чистый лист</h1>
             <h1 class="question-part-2">— такой cтрашный?</h1>
           </div>
-          <p class="respons">
+          <h2 class="respons">
             Сам по себе чистый лист, конечно, не страшный. Боимся мы чаще всего
             объёма работы, которую предстоит сделать. Усилия, той точки, которую
             нужно преодолеть, чтобы переключить мозг из состояния паники в
             состояние потока. Причин, почему первые усилия даются так сложно,
             может быть очень много. Вот основные:
-          </p>
+          </h2>
           <ul class="list_reasons">
             <li class="reasons_ul-li">
               <b>Неуверенность в результате.</b> И в том, что его вообще можно
@@ -127,10 +136,10 @@
             <h1 class="how1">Как всё-таки начать</h1>
             <h1 class="how2">что-то делать</h1>
           </div>
-          <p class="how_response">
+          <h2 class="how_response">
             Чаще всего страх чистого листа появляется не из-за чего-то одного, а
             из-за совокупности нескольких факторов. Вот что может помочь:
-          </p>
+          </h2>
         </div>
 
         <ul class="card-list">
@@ -163,9 +172,9 @@
           <li>
             <article class="card card_theme_bright">
               <div class="card__content">
-                <h1 class="card__title_bright">
+                <h3 class="card__title_bright">
                   Поставить перед собой рамку для фотографии
-                </h1>
+                </h3>
                 <div class="card__text_bright">
                   <p>
                     Самую обычную: 10 на 15 сантиметров. Уже от одного ощущения,
@@ -190,7 +199,7 @@
                 <p class="card__author-name">Иван Бунин</p>
               </div>
               <div class="card__content">
-                <h1 class="card__title">Сделать из задачи рутину</h1>
+                <h3 class="card__title">Сделать из задачи рутину</h3>
                 <div class="card__text">
                   <p>
                     «Писать стихи нужно каждый день, подобно тому как скрипач
